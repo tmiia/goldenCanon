@@ -6,12 +6,15 @@
     color: $white;
     width: 12.5%;
     text-transform: uppercase;
+    margin-bottom: 15px;
     .value{
+        line-height: 1;
         font-size: 60px;
         font-weight: 600;
     }
     .type{
         font-size: 16px;
         font-weight: 600;
+        margin: 10px 0 20px;
     }
 }

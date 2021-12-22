@@ -18,21 +18,19 @@ a { text-decoration: none; }
 * { box-sizing: border-box; }
 
 /*COLORS*/
-body { background-color: #282828; font-family: "Poppins"; }
+body { background-color: #282828; font-family: "Poppins"; width: 100%; height: 100vh; display: grid; grid-template-columns: repeat(4, 25%); grid-template-rows: repeat(8, 12.5%); grid-gap: 0; }
 
-.stats { display: flex; flex-direction: column; align-items: center; justify-content: center; color: #fdffff; width: 12.5%; text-transform: uppercase; }
+.stats { display: flex; flex-direction: column; align-items: center; justify-content: center; color: #fdffff; width: 12.5%; text-transform: uppercase; margin-bottom: 15px; }
 
-.stats .value { font-size: 60px; font-weight: 600; }
+.stats .value { line-height: 1; font-size: 60px; font-weight: 600; }
 
-.stats .type { font-size: 16px; font-weight: 600; }
+.stats .type { font-size: 16px; font-weight: 600; margin: 10px 0 20px; }
 
-aside { margin-left: 75px; margin-top: calc(12.5% - 45px); }
+aside { grid-column: 1 /2; grid-row: 3 / 4; margin-left: 75px; }
 
-aside span { margin: 10px 0; }
+.skill { grid-column: 2/4; grid-row: 4; transform: translateY(50%); text-align: center; font-size: 60px; font-weight: 600; color: #fdffff; }
 
-.skill { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 60px; font-weight: 600; color: #fdffff; }
-
-.line { position: absolute; top: calc(50% + 105px); left: 50%; transform: translate(-50%, -50%); width: 50%; height: 4px; background-color: rgba(53, 53, 53, 0.64); }
+.line { position: relative; height: 4px; grid-column: 2 /4; grid-row: 5; align-self: end; transform: translateY(45px); background-color: rgba(53, 53, 53, 0.64); }
 
 .line .name { position: absolute; left: 50%; transform: translate(-50%, -50%); font-size: 16px; font-weight: 600; color: rgba(87, 152, 156, 0.78); }
 

@@ -1,8 +1,8 @@
 .skill{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    grid-column: 2/4;
+    grid-row: 4;
+    transform: translateY(50%);
+    text-align: center;
     font-size: 60px;
     font-weight: 600;
     color: $white;
