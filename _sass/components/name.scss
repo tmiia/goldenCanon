@@ -1,11 +1,11 @@
 .line{
     position: relative;
     height: 4px;
-    grid-column: 2 /4;
-    grid-row: 5;
-    align-self: end;
+    // grid-row: 5;
+    width: 50%;
     transform: translateY(45px);
     background-color: rgba(53, 53, 53, 0.64);
+    margin-top: 8em;
     .name{
         position: absolute;
         left: 50%;

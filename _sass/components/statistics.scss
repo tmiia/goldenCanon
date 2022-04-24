@@ -1,4 +1,8 @@
 aside{
+  position: absolute;
+  top: 50%;
+  left: 3em;
+  transform: translateY(-50%);
     grid-column: 1 /2;
     grid-row: 3 / 4;
     margin-left: 75px;
